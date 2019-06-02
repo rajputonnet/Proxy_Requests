@@ -3,7 +3,7 @@ Hello Friends,
 I have created this project to scrap out the images from network using proxy ips.
 
 **Interpreter** 
-    Python 3.6
+Python 3.6
 
 **Required modules:**
     PIL
