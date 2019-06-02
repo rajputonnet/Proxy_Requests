@@ -9,7 +9,7 @@ from PIL import Image
 from scraper.image_scraper import ImageScraper
 from scraper.user_agent import UserAgent
 
-IMAGE_FORMAT = 'png'  # Change the image type of saved image
+IMAGE_FORMAT = '.png'  # Change the image type of saved image
 URL = 'https://cdn.fileinfo.com/img/ss/lg/jpg_44.jpg'  # Image url which needs to be downloaded
 HTTP_PROXY = 'http://167.99.156.196:3128'  # http Proxy ip with port
 HTTPS_PROXY = 'https://167.99.156.196:3128'  # https Proxy ip with port
@@ -42,7 +42,7 @@ if __name__ == '__main__':
     if response.status_code == 200:
 
         # Getting file name from the image url
-        file_name = URL.split('/')[-1]
+        file_name = URL.split('/')[-1].split('.')[0]+IMAGE_FORMAT
 
         # Generating image file from response
         open(file_name, "wb+").write(response.content)
