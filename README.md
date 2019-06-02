@@ -9,6 +9,7 @@ Python 3.6
 imageio
 requests
 
+**Note :** To install all packages run : pip intall -r requirements.txt
 **Project Hierarchy:**
 config
     >user_agents.txt
@@ -20,3 +21,4 @@ scraper
     >user_agent.py
 main.py
 README.md
+requirements.txt
