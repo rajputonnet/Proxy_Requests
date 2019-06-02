@@ -6,8 +6,8 @@ I have created this project to scrap out the images from network using proxy ips
 Python 3.6
 
 **Required modules:**
-PIL
-Requests
+imageio
+requests
 
 **Project Hierarchy:**
 config
